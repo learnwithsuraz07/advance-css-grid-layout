@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css column property</title>
+    <style>
+      
+
+      /* flex box property practice */
+      .flex-box{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        /* justify-content:space-around; */
+        /* justify-content:space-evenly; */
+        /* justify-content:space-between; */
+        align-items:flex-start;
+        justify-content:;
+
+      }
+
+
+      .grid-container {
+        columns: 4 300px;
+        column-gap: 1em;
+        max-width: 80%;
+        margin: 0 auto;
+      }
+      .box {
+        background-color: #0f4c5c;
+        background-color: #345;
+        background-color: #1e293b;
+        color: #ffecae;
+        margin-bottom: 1em;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-family: monospace;
+        position: relative;
+        overflow: hidden;
+      }
+
+      p {
+        padding: 25px 15px 0px 15px;
+      }
+
+      .box::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #ff8c00;
+        background-color: #148e6d;
+        padding: 2px 15px;
+        border-radius: 0 0 0 10px;
+      }
+
+      .box1::before {
+        content: "Introduction";
+      }
+      .box2::before {
+        content: "Console";
+      }
+      .box3::before {
+        content: "Numbers";
+      }
+      .box4::before {
+        content: "Variables";
+      }
+      .box5::before {
+        content: "Strings";
+      }
+      .box6::before {
+        content: "Arithmetic Operators";
+      }
+      .box7::before {
+        content: "Assignment Operators";
+      }
+      .box8::before {
+        content: "Comments";
+      }
+      .box9::before {
+        content: "String Interpolation";
+      }
+      .box10::before {
+        content: "Let Keyword";
+      }
+      .box11::before {
+        content: "Const Keyword";
+      }
+      hr {
+        position: absolute;
+        width: 100%;
+        top: 20px;
+        border-width: 0.1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="box box1">
+        <hr />
+        <p>
+          1. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Consequuntur similique blanditiis fuga modi ea natus delectus.
+          Exercitationem omnis iste voluptatem.
+        </p>
+      </div>
+      <div class="box box2">
+        <hr />
+        <p>
+          2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          magni amet assumenda numquam itaque veritatis quo laborum id beatae
+          odio quibusdam, laboriosam doloribus porro! Rem dignissimos cumque
+          possimus, nobis ipsum laudantium ea pariatur veritatis minus repellat.
+          Reprehenderit a facere ratione ipsum maxime quas eos voluptatibus nemo
+          asperiores, debitis omnis error.
+        </p>
+      </div>
+      <div class="box box3">
+        <hr />
+        <p>
+          3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+          voluptate, suscipit, libero doloremque at maxime mollitia molestias in
+          vel necessitatibus ullam! Rerum odio atque, veniam officiis ullam
+          dolor. Dolorem quos voluptatem magni provident voluptas facilis, qui
+          tenetur! Error sint iusto distinctio facilis et sapiente aliquid eius
+          fuga, commodi voluptatum vel quidem magni? Aspernatur blanditiis
+          aperiam ad perferendis sunt fuga quam quae consectetur aut fugit
+          cumque rerum distinctio, sed ab corrupti architecto nulla quas ducimus
+          quaerat, eaque est, possimus officia repudiandae! Placeat perferendis
+          libero adipisci tempora enim corrupti ducimus, sit, recusandae,
+          accusantium ullam quasi? Cum distinctio deleniti corrupti nihil, eos
+          nostrum.
+        </p>
+      </div>
+      <div class="box box4">
+        <hr />
+        <p>
+          4. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+          vitae magnam fugit ipsum ea porro blanditiis? Corrupti animi error
+          consequatur?
+        </p>
+      </div>
+      <div class="box box5">
+        <hr />
+        <p>
+          5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          voluptates accusantium dignissimos laboriosam labore fugit veniam,
+          architecto ad animi quisquam minima dolores aliquam in explicabo
+          commodi expedita ipsum atque. Deserunt nam maiores quasi libero,
+          possimus at ipsam. Ea, dolor consequatur! Harum at laborum vero enim
+          vitae beatae, cum aliquam? Soluta nulla odio fugit, eos ipsa tenetur
+          sint placeat laborum ipsum repellat quia velit nam sunt eveniet vel
+          odit accusamus atque.
+        </p>
+      </div>
+      <div class="box box6">
+        <hr />
+        <p>
+          6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+          quisquam rem. Ab, maxime. Perspiciatis ex non, voluptatum, totam aut
+          earum accusamus suscipit vel dolor provident ut distinctio nihil,
+          ullam doloremque?
+        </p>
+      </div>
+      <div class="box box7">
+        <hr />
+        <p>
+          7. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem, quis labore, rem quod quibusdam ab doloribus harum
+          asperiores, consectetur explicabo nemo itaque! Veniam cum perferendis
+          voluptatem unde ea molestias maxime sit aspernatur, quisquam iste
+          error asperiores distinctio numquam aliquam voluptate inventore velit
+          alias quas debitis sequi facilis ex voluptatibus corporis? lorem100
+        </p>
+      </div>
+      <div class="box box8">
+        <hr />
+        <p>
+          8. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eaque
+          error, praesentium, commodi iusto unde totam delectus saepe et tempore
+          vero molestias, possimus velit minima. Non quaerat exercitationem ea
+          earum vitae debitis unde. Tempore, non laboriosam nulla repudiandae
+          aspernatur molestiae.
+        </p>
+      </div>
+      <div class="box box9">
+        <hr />
+        <p>
+          9. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+          beatae fugiat provident hic, a similique aut dignissimos earum.
+          Pariatur nesciunt, sapiente dolores inventore molestias nisi nihil
+          vel? Atque minus itaque ab architecto! Nulla consectetur vel
+          exercitationem, unde a quibusdam! Sint, totam assumenda vel officia
+          doloribus commodi cumque minus. Placeat culpa perspiciatis praesentium
+          eos animi repellat ad qui magni cumque, nemo, quos doloremque ipsam
+          quis harum assumenda nihil incidunt sit eaque hic commodi eum ducimus
+          quam! Voluptate eum tempore voluptatem id voluptates sit alias
+          aspernatur provident et facilis vel sunt praesentium quod vero iste
+          perspiciatis voluptatum dignissimos incidunt asperiores eos quidem,
+          laboriosam cum architecto! Sint excepturi delectus quos nam, vero
+          animi? Soluta iusto atque, eum veritatis animi dicta perferendis
+          nesciunt facere suscipit hic quisquam commodi nihil aut pariatur
+          blanditiis! Voluptates molestiae nemo impedit eligendi voluptatibus
+          tenetur inventore, exercitationem fuga eaque officiis alias dolorum
+          ipsum, rerum nostrum quisquam omnis. Obcaecati quam autem ipsam
+          quibusdam perspiciatis, perferendis consequuntur, error delectus
+          dolores, necessitatibus quidem numquam repellat porro similique nisi.
+          Sint nesciunt, fugiat quae iure harum fuga eaque amet exercitationem!
+          Sunt voluptatem quam cumque obcaecati corporis laborum, fugit expedita
+          rerum, facilis iste accusamus reiciendis vero numquam animi neque
+          consequatur et? Consectetur esse fugit asperiores pariatur?
+        </p>
+      </div>
+      <div class="box box10">
+        <hr />
+        <p>
+          10. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+          beatae fugiat provident hic, a similique aut dignissimos earum.
+          Pariatur nesciunt, sapiente dolores inventore molestias nisi nihil
+          vel? Atque minus itaque ab architecto! Nulla consectetur vel
+          exercitationem, unde a quibusdam! Sint, totam assumenda vel officia
+          doloribus commodi cumque minus. Placeat culpa perspiciatis praesentium
+          eos animi repellat ad qui magni cumque, nemo, quos doloremque ipsam
+          quis harum assumenda nihil incidunt sit eaque hic commodi eum ducimus
+          quam! Voluptate eum tempore voluptatem id voluptates sit alias
+          aspernatur provident et facilis vel sunt praesentium quod vero iste
+          perspiciatis voluptatum dignissimos incidunt asperiores eos quidem,
+          laboriosam cum architecto! Sint excepturi delectus quos nam, vero
+          animi? Soluta iusto atque, eum veritatis animi dicta perferendis
+          nesciunt facere suscipit hic quisquam commodi nihil aut pariatur
+          blanditiis! Voluptates molestiae nemo impedit eligendi voluptatibus
+          tenetur inventore, exercitationem fuga eaque officiis alias dolorum
+          ipsum, rerum nostrum quisquam omnis. Obcaecati quam autem ipsam
+          quibusdam perspiciatis, perferendis consequuntur, error delectus
+          dolores, necessitatibus quidem numquam repellat porro similique nisi.
+          Sint nesciunt, fugiat quae iure harum fuga eaque amet exercitationem!
+          Sunt voluptatem quam cumque obcaecati corporis laborum, fugit expedita
+          rerum, facilis iste accusamus reiciendis vero numquam animi neque
+          consequatur et? Consectetur esse fugit asperiores pariatur?
+        </p>
+      </div>
+      <div class="box box11">
+        <hr />
+        <p>
+          11. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+          beatae fugiat provident hic, a similique aut dignissimos earum.
+          Pariatur nesciunt, sapiente dolores inventore molestias nisi nihil
+          vel? Atque minus itaque ab architecto! Nulla consectetur vel
+          exercitationem, unde a quibusdam! Sint, totam assumenda vel officia
+          doloribus commodi cumque minus. Placeat culpa perspiciatis praesentium
+          eos animi repellat ad qui magni cumque, nemo, quos doloremque ipsam
+          quis harum assumenda nihil incidunt sit eaque hic commodi eum ducimus
+          quam! Voluptate eum tempore voluptatem id voluptates sit alias
+          aspernatur provident et facilis vel sunt praesentium quod vero iste
+          perspiciatis voluptatum dignissimos incidunt asperiores eos quidem,
+          laboriosam cum architecto! Sint excepturi delectus quos nam, vero
+          animi? Soluta iusto atque, eum veritatis animi dicta perferendis
+          nesciunt facere suscipit hic quisquam commodi nihil aut pariatur
+          blanditiis! Voluptates molestiae nemo impedit eligendi voluptatibus
+          tenetur inventore, exercitationem fuga eaque officiis alias dolorum
+          ipsum, rerum nostrum quisquam omnis. Obcaecati quam autem ipsam
+          quibusdam perspiciatis, perferendis consequuntur, error delectus
+          dolores, necessitatibus quidem numquam repellat porro similique nisi.
+          Sint nesciunt, fugiat quae iure harum fuga eaque amet exercitationem!
+          Sunt voluptatem quam cumque obcaecati corporis laborum, fugit expedita
+          rerum, facilis iste accusamus reiciendis vero numquam animi neque
+          consequatur et? Consectetur esse fugit asperiores pariatur?
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let a = "hello"
+    </script>
+  </body>
+</html>
